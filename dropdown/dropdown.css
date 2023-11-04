@@ -1,0 +1,67 @@
+.dropdwon{
+    display: none;
+
+    border: 1px solid #E8E8E8;
+    position: absolute;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 1;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.invited-user-item > .invite-user-item{
+    display: flex;
+    align-items: center;
+}
+
+.invited-user-item > img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.permission-status {
+    display: flex;
+    gap: 10px;
+    width: 118px;
+    user-select: none;
+
+    color: #fff;
+    background-color: #ffffff10;
+    border-radius: 1rem;
+    padding: 10px;
+    cursor: pointer;
+
+    /* border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
+}
+
+.permission-status.no-auth {
+    background-color: unset;
+    border: none;
+    cursor: default;
+    width: unset;
+}
+
+.permission-status:not(.no-auth):hover {
+    background-color: rgb(110 108 177)
+}
+
+.permission-option {
+    display: none;
+    position: absolute;
+    user-select: none;
+
+    background-color: rgb(76 73 187);
+    width: 118px;
+    color: #fff;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.permission-option:hover {
+    background-color: rgb(110 108 177)
+}
